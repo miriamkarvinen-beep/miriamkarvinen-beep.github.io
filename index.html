@@ -3,73 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TMI Miriam Karvinen | Markkinointi ja ICT-palvelut</title>
+<title>Miriam Karvinen</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
 }
 
-:root{
-    --blue:#2083B4;
-    --purple:#8A6ED1;
-    --pink:#D94BDE;
-    --dark:#0f172a;
-    --text:#475569;
-    --bg:#f8fafc;
-
-    --gradient:linear-gradient(
-        90deg,
-        #2083B4,
-        #8A6ED1,
-        #D94BDE
-    );
+nav {
+    background: white;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-html{
-    scroll-behavior:smooth;
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.7;
+.hero {
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.container{
-    width:min(1200px,92%);
-    margin:auto;
+h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
-nav{
-    position:sticky;
-    top:0;
-    background:rgba(255,255,255,.95);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid #e5e7eb;
-    z-index:999;
+p {
+    font-size: 20px;
 }
 
-.nav-inner{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:1rem 0;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
 }
+</style>
+</head>
 
-.logo{
-    font-size:2rem;
-    font-weight:800;
-    background:var(--gradient);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+<body>
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap
+<nav>
+    <div class="logo">Miriam Karvinen</div>
+</nav>
+
+<section class="hero">
+    <h1>Markkinointia</h1>
+    <p>Verkkosivut, digimarkkinointi ja ICT-palvelut.</p>
+    <a href="mailto:info@miriamkarvinen.fi" class="btn">
+        Ota yhteyttä
+    </a>
+</section>
+
+</body>
+</html>
