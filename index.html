@@ -82,7 +82,7 @@ nav a{
 }
 
 .hero{
-    padding:5rem 0;
+    padding:6rem 0;
 }
 
 .hero-grid{
@@ -92,8 +92,8 @@ nav a{
     align-items:center;
 }
 
-h1{
-    font-size:clamp(3.5rem,7vw,5.5rem);
+.hero h1{
+    font-size:clamp(3rem,7vw,5.5rem);
     line-height:1;
     color:var(--dark);
     margin-bottom:1.5rem;
@@ -102,140 +102,4 @@ h1{
 .gradient{
     background:var(--gradient);
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.hero p{
-    font-size:1.25rem;
-    margin-bottom:2rem;
-}
-
-.hero-img{
-    width:100%;
-    max-width:500px;
-    display:block;
-    margin:auto;
-    border-radius:24px;
-}
-
-.btns{
-    display:flex;
-    gap:1rem;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:1rem 1.5rem;
-    text-decoration:none;
-    border-radius:999px;
-    font-weight:700;
-    transition:.2s;
-}
-
-.btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn-primary{
-    background:var(--gradient);
-    color:white;
-}
-
-.btn-secondary{
-    background:white;
-    color:var(--dark);
-    border:1px solid #d1d5db;
-}
-
-.section{
-    padding:5rem 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:3rem;
-}
-
-.section-title h2{
-    font-size:2.5rem;
-    color:var(--dark);
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:1.5rem;
-}
-
-.card{
-    background:white;
-    padding:2rem;
-    border-radius:24px;
-    box-shadow:0 4px 20px rgba(0,0,0,.08);
-}
-
-.card h3{
-    margin-bottom:1rem;
-    color:var(--dark);
-}
-
-.about,
-.contact{
-    background:white;
-    padding:3rem;
-    border-radius:24px;
-    box-shadow:0 4px 20px rgba(0,0,0,.08);
-}
-
-footer{
-    text-align:center;
-    padding:3rem 1rem;
-    color:#6b7280;
-}
-
-@media (max-width: 900px){
-
-    .hero-grid{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
-
-    .btns{
-        justify-content:center;
-    }
-
-    nav ul{
-        gap:1rem;
-    }
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-    <div class="container nav-inner">
-
-        <div class="logo">
-            Miriam Karvinen
-        </div>
-
-        <ul>
-            <li><a href="#palvelut">Palvelut</a></li>
-            <li><a href="#minusta">Minusta</a></li>
-            <li><a href="#yhteys">Yhteys</a></li>
-        </ul>
-
-    </div>
-</nav>
-
-<section class="hero">
-
-    <div class="container hero-grid">
-
-        <div>
-
-            <h1>
-                Markkinointia
+    -webkit
