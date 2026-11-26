@@ -45,6 +45,9 @@
     .services li::before { content: ""; position: absolute; left: 0; top: 1.3rem; width: 0.7rem; height: 0.7rem; background: var(--pink); }
 
     .about p, .contact p { max-width: 38rem; margin: 0 0 1rem; }
+    .about-body { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
+    .about-text { flex: 1 1 20rem; }
+    .about-body img { flex: 0 1 20rem; width: 100%; max-width: 20rem; height: auto; }
     .button {
       display: inline-block;
       padding: 0.75rem 1.4rem;
@@ -89,8 +92,13 @@
 
       <section id="minusta" class="about">
         <h2>Minusta</h2>
-        <p>Olen Miriam Karvinen. Minulla on kymmenen vuoden kokemus markkinoinnista ja kaksi vuotta myyntipäällikkönä B2B-myynnistä, joten ymmärrän sekä markkinoinnin että myynnin näkökulman.</p>
-        <p>Olen suorittanut markkinointiviestinnän opintoja ja opiskelen parhaillaan IT-tradenomiksi. Työssäni yhdistyvät markkinointi ja ICT-osaaminen.</p>
+        <div class="about-body">
+          <div class="about-text">
+            <p>Olen Miriam Karvinen. Minulla on kymmenen vuoden kokemus markkinoinnista ja kaksi vuotta myyntipäällikkönä B2B-myynnistä, joten ymmärrän sekä markkinoinnin että myynnin näkökulman.</p>
+            <p>Olen suorittanut markkinointiviestinnän opintoja ja opiskelen parhaillaan IT-tradenomiksi. Työssäni yhdistyvät markkinointi ja ICT-osaaminen.</p>
+          </div>
+          <img src="Tmi%20Miriam%20Karvinen.png" alt="Piirroskuva naisesta kannettavan tietokoneen ääressä ja teksti Tmi Miriam Karvinen" loading="lazy">
+        </div>
       </section>
 
       <section id="yhteystiedot" class="contact">
