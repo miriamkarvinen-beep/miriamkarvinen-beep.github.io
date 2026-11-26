@@ -3,56 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miriam Karvinen | Markkinointi & Verkkosivut</title>
+<title>Miriam Karvinen</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-:root{
-    --blue:#2083B4;
-    --purple:#8A6ED1;
-    --pink:#D94BDE;
-    --dark:#0F172A;
-    --gray:#64748B;
-    --light:#F8FAFC;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
 body{
-    font-family: "Segoe UI", sans-serif;
-    background: var(--light);
-    color: var(--gray);
+    margin:0;
+    font-family:Segoe UI,sans-serif;
+    background:#f8fafc;
 }
 
-header{
-    background:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:1px solid #e2e8f0;
-}
-
-.container{
-    width:min(1200px,90%);
-    margin:auto;
-}
-
-.nav{
+.hero{
+    min-height:100vh;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    padding:20px 0;
+    text-align:center;
+    padding:20px;
 }
 
-.logo{
-    font-size:2rem;
-    font-weight:800;
-    background:linear-gradient(90deg,#2083B4,#
+h1{
+    font-size:clamp(3rem,8vw,6rem);
+    margin:0;
+    color:#111827;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+p{
+    font-size:1.3rem;
+    max-width:700px;
+    margin:25px auto;
+}
+
+.button{
+    display:inline-block;
+    padding:16px 32px;
+    border-radius:999px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    background:linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+
+<div>
+
+<h1>
+Miriam <span class="gradient">Karvinen</span>
+</h1>
+
+<p>
+Verkkosivut, digimarkkinointi ja ICT-palvelut.
+</p>
+
+<a class="button" href="mailto:info@miriamkarvinen.fi">
+Ota yhteyttä
+</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
