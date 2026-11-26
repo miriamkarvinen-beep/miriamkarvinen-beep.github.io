@@ -6,7 +6,7 @@
 
 <title>TMI Miriam Karvinen | Markkinointi ja ICT-palvelut</title>
 
-<!-- 1. LISÄTTY GOOGLE FONTS -LINKKI (SATISFY) -->
+<!-- Ladataan sekä Satisfy että Plus Jakarta Sans Google Fontsista -->
 <link rel="preconnect" href="https://googleapis.com">
 <link rel="preconnect" href="https://gstatic.com" crossorigin>
 <link href="https://googleapis.com" rel="stylesheet">
@@ -37,7 +37,7 @@
 }
 
 body{
-    font-family:Segoe UI,sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background:var(--bg);
     color:var(--text);
     line-height:1.7;
@@ -63,7 +63,6 @@ nav{
     padding:1rem 0;
 }
 
-/* 2. SATISFY-FONTTI LISÄTTY LOGOTEKSTIIN */
 .logo{
     font-family: 'Satisfy', cursive;
     font-size:2.4rem;
@@ -71,7 +70,7 @@ nav{
     background:var(--gradient);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    padding-right: 0.3rem; /* Estää kaunokirjoituksen viimeisen kirjaimen leikkautumisen */
+    padding-right: 0.3rem;
 }
 
 nav ul{
@@ -98,20 +97,27 @@ nav a{
 }
 
 h1{
-    font-size:clamp(3.5rem,7vw,5.5rem);
-    line-height:1.1;
+    font-size:clamp(3rem,6vw,4.8rem);
+    font-weight:800;
+    line-height:1.15;
     color:var(--dark);
     margin-bottom:1.5rem;
 }
 
+/* Satisfy-fontti liukuvärikorostukseen */
 .gradient{
+    font-family: 'Satisfy', cursive;
+    font-weight:400;
+    font-size: 1.15em; /* Hieman suurempi, jotta tasapainottuu perusfontin kanssa */
     background:var(--gradient);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    display: inline-block;
+    padding-right: 0.3rem;
 }
 
 .hero p{
-    font-size:1.25rem;
+    font-size:1.2rem;
     margin-bottom:2rem;
 }
 
@@ -162,7 +168,7 @@ h1{
 .tagline{
     text-align:center;
     font-size:1.3rem;
-    font-weight:600;
+    font-weight:700;
     color:var(--dark);
 }
 
@@ -201,7 +207,6 @@ h1{
     margin-bottom:3rem;
 }
 
-/* 3. SATISFY-FONTTI LISÄTTY OSIOIDEN OTSIKOIHIN (Palvelut, Minusta, Ota yhteyttä) */
 .section-title h2{
     font-family: 'Satisfy', cursive;
     font-size:3.2rem;
@@ -225,6 +230,7 @@ h1{
 .card h3{
     margin-bottom:1rem;
     color:var(--dark);
+    font-weight:700;
 }
 
 .about,
