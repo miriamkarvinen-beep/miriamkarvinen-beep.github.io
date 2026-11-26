@@ -9,8 +9,10 @@
     :root {
       --black: #000000;
       --white: #ffffff;
-      --pink: #ff2d95;
-      --blue: #1d4ed8;
+      --pink: #f95cf4;
+      --blue: #0b72a0;
+      --blue-bright: #1286b8;
+      --gradient: linear-gradient(90deg, var(--blue-bright), var(--pink));
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -26,7 +28,7 @@
     a { color: var(--blue); text-underline-offset: 0.2em; }
     a:focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; }
 
-    header { background: var(--black); color: var(--white); border-bottom: 10px solid var(--pink); padding: 4rem 0 3.5rem; }
+    header { background: var(--black); color: var(--white); border-bottom: 10px solid var(--pink); border-image: var(--gradient) 1; padding: 4rem 0 3.5rem; }
     h1 {
       margin: 0;
       font-size: clamp(2.6rem, 9vw, 6.5rem);
@@ -35,19 +37,19 @@
       letter-spacing: -0.03em;
       text-transform: uppercase;
     }
+    .header-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2.5rem; }
+    .header-text { flex: 1 1 24rem; }
+    .logo { flex: 0 1 16rem; width: 100%; max-width: 16rem; height: auto; border-radius: 0.5rem; }
     .lead { max-width: 34rem; margin: 2rem 0 0; font-size: 1.35rem; font-weight: 600; line-height: 1.4; }
 
     section { padding: 3rem 0 1rem; }
-    h2 { display: inline-block; margin: 0 0 1.5rem; padding-bottom: 0.2rem; border-bottom: 6px solid var(--pink); font-size: 1.7rem; font-weight: 800; letter-spacing: -0.01em; }
+    h2 { display: inline-block; margin: 0 0 1.5rem; padding-bottom: 0.2rem; border-bottom: 6px solid var(--pink); border-image: var(--gradient) 1; font-size: 1.7rem; font-weight: 800; letter-spacing: -0.01em; }
 
     .services { list-style: none; margin: 0; padding: 0; columns: 2 18rem; column-gap: 3rem; }
     .services li { break-inside: avoid; position: relative; padding: 0.85rem 0 0.85rem 1.75rem; border-bottom: 1px solid var(--black); font-weight: 500; }
     .services li::before { content: ""; position: absolute; left: 0; top: 1.3rem; width: 0.7rem; height: 0.7rem; background: var(--pink); }
 
     .about p, .contact p { max-width: 38rem; margin: 0 0 1rem; }
-    .about-body { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
-    .about-text { flex: 1 1 20rem; }
-    .about-body img { flex: 0 1 20rem; width: 100%; max-width: 20rem; height: auto; }
     .button {
       display: inline-block;
       padding: 0.75rem 1.4rem;
@@ -69,9 +71,12 @@
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>TMI Miriam Karvinen</h1>
-      <p class="lead">Ammattitaidolla ja vuosikymmenen kokemuksella markkinoinnin, suunnittelun ja ICT-palvelujen parissa.</p>
+    <div class="wrap header-grid">
+      <div class="header-text">
+        <h1>TMI Miriam Karvinen</h1>
+        <p class="lead">Ammattitaidolla ja vuosikymmenen kokemuksella markkinoinnin, suunnittelun ja ICT-palvelujen parissa.</p>
+      </div>
+      <img class="logo" src="Tmi%20Miriam%20Karvinen.png" alt="Piirroskuva naisesta kannettavan tietokoneen ääressä">
     </div>
   </header>
 
@@ -92,13 +97,8 @@
 
       <section id="minusta" class="about">
         <h2>Minusta</h2>
-        <div class="about-body">
-          <div class="about-text">
-            <p>Olen Miriam Karvinen. Minulla on kymmenen vuoden kokemus markkinoinnista ja kaksi vuotta myyntipäällikkönä B2B-myynnistä, joten ymmärrän sekä markkinoinnin että myynnin näkökulman.</p>
-            <p>Olen suorittanut markkinointiviestinnän opintoja ja opiskelen parhaillaan IT-tradenomiksi. Työssäni yhdistyvät markkinointi ja ICT-osaaminen.</p>
-          </div>
-          <img src="Tmi%20Miriam%20Karvinen.png" alt="Piirroskuva naisesta kannettavan tietokoneen ääressä ja teksti Tmi Miriam Karvinen" loading="lazy">
-        </div>
+        <p>Olen Miriam Karvinen. Minulla on kymmenen vuoden kokemus markkinoinnista ja kaksi vuotta myyntipäällikkönä B2B-myynnistä, joten ymmärrän sekä markkinoinnin että myynnin näkökulman.</p>
+        <p>Olen suorittanut markkinointiviestinnän opintoja ja opiskelen parhaillaan IT-tradenomiksi. Työssäni yhdistyvät markkinointi ja ICT-osaaminen.</p>
       </section>
 
       <section id="yhteystiedot" class="contact">
