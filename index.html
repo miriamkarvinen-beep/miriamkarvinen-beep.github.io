@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>TMI Miriam Karvinen | Markkinointi, visuaalinen suunnittelu ja ICT-palvelut</title>
-
-<meta name="description" content="Markkinointia, visuaalista suunnittelua ja ICT-palveluja yrityksille. Yli 10 vuoden kokemuksella.">
+<title>TMI Miriam Karvinen</title>
 
 <style>
 
-@font-face {
-    font-family: "Comely";
-    src: url("Comely.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root{
-    --dark:#111827;
-    --text:#374151;
-    --light:#f8fafc;
-    --white:#ffffff;
-
     --blue:#2083B4;
-    --blue2:#5276C6;
-    --violet:#8A6ED1;
+    --purple:#8A6ED1;
     --pink:#D94BDE;
+    --dark:#131722;
+    --text:#525866;
+    --bg:#F7F9FC;
 
-    --gradient:linear-gradient(
-        90deg,
-        var(--blue),
-        var(--blue2),
-        var(--violet),
-        var(--pink)
-    );
+    --gradient:
+        linear-gradient(
+            120deg,
+            #2083B4,
+            #6A79D8,
+            #D94BDE
+        );
 }
 
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.85);
+    border-bottom:1px solid #ececec;
+    z-index:100;
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.logo{
+    font-family:cursive;
+    font-size:2rem;
+    font-weight:700;
+    background:var(--gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+nav ul{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr
