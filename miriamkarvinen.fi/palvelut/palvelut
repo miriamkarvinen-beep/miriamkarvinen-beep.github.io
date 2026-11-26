@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palvelut – Tmi Miriam Karvinen</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Etusivu</a>
+      <a href="./">Palvelut</a>
+      <a href="../minusta/">Minusta</a>
+      <a href="../yhteystiedot/">Yhteystiedot</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Palvelut – Tmi Miriam Karvinen</h1>
+    <p>Käytännönläheistä tukea yrityksille B2B-markkinoinnissa, myynnin vauhdittamisessa, ICT-asioissa sekä tekstityössä.</p>
+
+    <section>
+      <h2>B2B-markkinointi, segmentointi ja buukkaus</h2>
+      <p>Asiakassegmentointi, myyntiprojektointi sekä tapaamisten buukkaus ja markkinoinnin tuki selkeästi ja tavoitteellisesti.</p>
+    </section>
+
+    <section>
+      <h2>ICT-tuki, tekstinkäsittely ja käännökset</h2>
+      <p>Käytännön ICT-tuki, tekstien editointi ja muokkaus sekä pienet käännöspalvelut sujuvasti ja luotettavasti.</p>
+    </section>
+
+    <section>
+      <h2>Hinnoittelu ja yhteistyö</h2>
+      <p>Asiantuntijapalvelut tuntityönä 50 €/h tai sopimuksen mukaan. Palvelut saatavilla etänä koko Suomeen sekä paikan päällä Lahden seudulla.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Tmi Miriam Karvinen</p>
+  </footer>
+</body>
+</html>
