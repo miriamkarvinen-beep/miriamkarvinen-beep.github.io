@@ -7,7 +7,6 @@
 <title>TMI Miriam Karvinen | Markkinointi ja ICT-palvelut</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -18,9 +17,9 @@
     --blue:#2083B4;
     --purple:#8A6ED1;
     --pink:#D94BDE;
-    --dark:#111827;
-    --text:#4B5563;
-    --bg:#F7F9FC;
+    --dark:#0f172a;
+    --text:#475569;
+    --bg:#f8fafc;
 
     --gradient:linear-gradient(
         90deg,
@@ -35,23 +34,24 @@ html{
 }
 
 body{
-    font-family:Segoe UI, sans-serif;
+    font-family:'Segoe UI',sans-serif;
     background:var(--bg);
     color:var(--text);
     line-height:1.7;
 }
 
 .container{
-    width:min(1200px,90%);
+    width:min(1200px,92%);
     margin:auto;
 }
 
 nav{
     position:sticky;
     top:0;
-    background:white;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
     border-bottom:1px solid #e5e7eb;
-    z-index:100;
+    z-index:999;
 }
 
 .nav-inner{
@@ -63,43 +63,13 @@ nav{
 
 .logo{
     font-size:2rem;
-    font-weight:700;
+    font-weight:800;
     background:var(--gradient);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
-    gap:2rem;
-}
-
-nav a{
-    text-decoration:none;
-    color:var(--dark);
-    font-weight:600;
-}
-
-.hero{
-    padding:6rem 0;
-}
-
-.hero-grid{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:4rem;
-    align-items:center;
-}
-
-.hero h1{
-    font-size:clamp(3rem,7vw,5.5rem);
-    line-height:1;
-    color:var(--dark);
-    margin-bottom:1.5rem;
-}
-
-.gradient{
-    background:var(--gradient);
-    -webkit-background-clip:text;
-    -webkit
+    list-style:none;
+    gap
