@@ -3,68 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miriam Karvinen</title>
+<title>Miriam Karvinen | Markkinointi & Verkkosivut</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f7fa;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-nav {
-    background: white;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+:root{
+    --blue:#2083B4;
+    --purple:#8A6ED1;
+    --pink:#D94BDE;
+    --dark:#0F172A;
+    --gray:#64748B;
+    --light:#F8FAFC;
 }
 
-.logo {
-    font-size: 40px;
-    font-weight: bold;
-    background: linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+html{
+    scroll-behavior:smooth;
 }
 
-.hero {
-    padding: 80px 20px;
-    text-align: center;
+body{
+    font-family: "Segoe UI", sans-serif;
+    background: var(--light);
+    color: var(--gray);
 }
 
-h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
+header{
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #e2e8f0;
 }
 
-p {
-    font-size: 20px;
+.container{
+    width:min(1200px,90%);
+    margin:auto;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: linear-gradient(90deg,#2083B4,#8A6ED1,#D94BDE);
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
 }
-</style>
-</head>
 
-<body>
-
-<nav>
-    <div class="logo">Miriam Karvinen</div>
-</nav>
-
-<section class="hero">
-    <h1>Markkinointia</h1>
-    <p>Verkkosivut, digimarkkinointi ja ICT-palvelut.</p>
-    <a href="mailto:info@miriamkarvinen.fi" class="btn">
-        Ota yhteyttä
-    </a>
-</section>
-
-</body>
-</html>
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    background:linear-gradient(90deg,#2083B4,#
