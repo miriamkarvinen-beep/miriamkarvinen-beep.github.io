@@ -6,6 +6,11 @@
 
 <title>TMI Miriam Karvinen | Markkinointi ja ICT-palvelut</title>
 
+<!-- 1. LISÄTTY GOOGLE FONTS -LINKKI (SATISFY) -->
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com" rel="stylesheet">
+
 <style>
 
 *{
@@ -58,12 +63,15 @@ nav{
     padding:1rem 0;
 }
 
+/* 2. SATISFY-FONTTI LISÄTTY LOGOTEKSTIIN */
 .logo{
-    font-size:2rem;
-    font-weight:700;
+    font-family: 'Satisfy', cursive;
+    font-size:2.4rem;
+    font-weight:400;
     background:var(--gradient);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+    padding-right: 0.3rem; /* Estää kaunokirjoituksen viimeisen kirjaimen leikkautumisen */
 }
 
 nav ul{
@@ -91,7 +99,7 @@ nav a{
 
 h1{
     font-size:clamp(3.5rem,7vw,5.5rem);
-    line-height:1;
+    line-height:1.1;
     color:var(--dark);
     margin-bottom:1.5rem;
 }
@@ -193,8 +201,11 @@ h1{
     margin-bottom:3rem;
 }
 
+/* 3. SATISFY-FONTTI LISÄTTY OSIOIDEN OTSIKOIHIN (Palvelut, Minusta, Ota yhteyttä) */
 .section-title h2{
-    font-size:2.5rem;
+    font-family: 'Satisfy', cursive;
+    font-size:3.2rem;
+    font-weight:400;
     color:var(--dark);
 }
 
