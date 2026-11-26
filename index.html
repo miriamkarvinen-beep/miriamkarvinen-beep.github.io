@@ -1,119 +1,37 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TMI Miriam Karvinen | Markkinointi, visuaalinen suunnittelu ja ICT-palvelut</title>
-  <meta name="description" content="Markkinointia, mainontaa, visuaalista suunnittelua ja ICT-palveluja yrityksille. Vuosikymmenen kokemuksella.">
-  <style>
-    :root {
-      --black: #000000;
-      --white: #ffffff;
-      --pink: #f95cf4;
-      --blue: #0b72a0;
-      --blue-bright: #1286b8;
-      --gradient: linear-gradient(90deg, var(--blue-bright), var(--pink));
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--white);
-      color: var(--black);
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1.125rem;
-      line-height: 1.6;
-    }
-    .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
-    a { color: var(--blue); text-underline-offset: 0.2em; }
-    a:focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; }
+@font-face {
+  font-family: "Comely";
+  src: url("Comely.ttf") format("truetype");
+}
 
-    header { background: var(--black); color: var(--white); border-bottom: 10px solid var(--pink); border-image: var(--gradient) 1; padding: 4rem 0 3.5rem; }
-    h1 {
-      margin: 0;
-      font-size: clamp(2.6rem, 9vw, 6.5rem);
-      line-height: 0.98;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      text-transform: uppercase;
-    }
-    .header-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2.5rem; }
-    .header-text { flex: 1 1 24rem; }
-    .logo { flex: 0 1 16rem; width: 100%; max-width: 16rem; height: auto; border-radius: 0.5rem; }
-    .lead { max-width: 34rem; margin: 2rem 0 0; font-size: 1.35rem; font-weight: 600; line-height: 1.4; }
+:root{
+  --dark:#111827;
+  --text:#374151;
+  --light:#f8fafc;
+  --white:#ffffff;
 
-    section { padding: 3rem 0 1rem; }
-    h2 { display: inline-block; margin: 0 0 1.5rem; padding-bottom: 0.2rem; border-bottom: 6px solid var(--pink); border-image: var(--gradient) 1; font-size: 1.7rem; font-weight: 800; letter-spacing: -0.01em; }
+  --blue:#2083B4;
+  --blue2:#5276C6;
+  --violet:#8A6ED1;
+  --pink:#D94BDE;
 
-    .services { list-style: none; margin: 0; padding: 0; columns: 2 18rem; column-gap: 3rem; }
-    .services li { break-inside: avoid; position: relative; padding: 0.85rem 0 0.85rem 1.75rem; border-bottom: 1px solid var(--black); font-weight: 500; }
-    .services li::before { content: ""; position: absolute; left: 0; top: 1.3rem; width: 0.7rem; height: 0.7rem; background: var(--pink); }
+  --gradient:linear-gradient(
+    90deg,
+    var(--blue),
+    var(--blue2),
+    var(--violet),
+    var(--pink)
+  );
+}
 
-    .about p, .contact p { max-width: 38rem; margin: 0 0 1rem; }
-    .button {
-      display: inline-block;
-      padding: 0.75rem 1.4rem;
-      background: var(--blue);
-      color: var(--white);
-      font-size: 1.2rem;
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .button:hover { background: var(--black); }
-    .buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; max-width: none; }
-    .button { overflow-wrap: anywhere; }
+*{
+  box-sizing:border-box;
+}
 
-    footer { margin-top: 3rem; border-top: 3px solid var(--black); padding: 1.5rem 0 3rem; font-size: 0.95rem; }
-    footer p { margin: 0; }
+html{
+  scroll-behavior:smooth;
+}
 
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="wrap header-grid">
-      <div class="header-text">
-        <h1>TMI Miriam Karvinen</h1>
-        <p class="lead">Ammattitaidolla ja vuosikymmenen kokemuksella markkinoinnin, suunnittelun ja ICT-palvelujen parissa.</p>
-      </div>
-      <img class="logo" src="Tmi%20Miriam%20Karvinen.png" alt="Piirroskuva naisesta kannettavan tietokoneen ääressä">
-    </div>
-  </header>
-
-  <div class="wrap">
-    <main>
-      <section id="palvelut">
-        <h2>Palvelut</h2>
-        <ul class="services">
-          <li>Markkinointi ja mainonta</li>
-          <li>Visuaalinen suunnittelu</li>
-          <li>Asiakassegmentointi</li>
-          <li>Asiakastyytyväisyyskyselyt</li>
-          <li>Outbound- ja inbound-markkinointi</li>
-          <li>B2B-markkinointi</li>
-          <li>ICT-palvelut</li>
-        </ul>
-      </section>
-
-      <section id="minusta" class="about">
-        <h2>Minusta</h2>
-        <p>Olen Miriam Karvinen. Minulla on kymmenen vuoden kokemus markkinoinnista ja kaksi vuotta myyntipäällikkönä B2B-myynnistä, joten ymmärrän sekä markkinoinnin että myynnin näkökulman.</p>
-        <p>Olen suorittanut markkinointiviestinnän opintoja ja opiskelen parhaillaan IT-tradenomiksi. Työssäni yhdistyvät markkinointi ja ICT-osaaminen.</p>
-      </section>
-
-      <section id="yhteystiedot" class="contact">
-        <h2>Yhteystiedot</h2>
-        <p>Kerro, mitä yrityksesi tarvitsee, niin vastaan sinulle.</p>
-        <p class="buttons">
-          <a class="button" href="mailto:tmi.miriam.karvinen@gmail.com">tmi.miriam.karvinen@gmail.com</a>
-          <a class="button" href="mailto:tmi.miriam.karvinen@proton.me">tmi.miriam.karvinen@proton.me</a>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>TMI Miriam Karvinen, Y-tunnus 3428079-2</p>
-    </footer>
-  </div>
-</body>
-</html>
+body{
+  margin:0;
+  background:var(--light);
+  color:
