@@ -22,8 +22,7 @@
     --text:#4B5563;
     --bg:#F7F9FC;
 
-    --gradient:
-    linear-gradient(
+    --gradient:linear-gradient(
         90deg,
         #2083B4,
         #8A6ED1,
@@ -31,8 +30,12 @@
     );
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Segoe UI,sans-serif;
+    font-family:Segoe UI, sans-serif;
     background:var(--bg);
     color:var(--text);
     line-height:1.7;
@@ -44,10 +47,10 @@ body{
 }
 
 nav{
-    background:white;
-    border-bottom:1px solid #e5e7eb;
     position:sticky;
     top:0;
+    background:white;
+    border-bottom:1px solid #e5e7eb;
     z-index:100;
 }
 
@@ -107,6 +110,14 @@ h1{
     margin-bottom:2rem;
 }
 
+.hero-img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    border-radius:24px;
+}
+
 .btns{
     display:flex;
     gap:1rem;
@@ -115,9 +126,9 @@ h1{
 
 .btn{
     display:inline-block;
-    padding:1rem 1.6rem;
-    border-radius:999px;
+    padding:1rem 1.5rem;
     text-decoration:none;
+    border-radius:999px;
     font-weight:700;
     transition:.2s;
 }
@@ -134,54 +145,7 @@ h1{
 .btn-secondary{
     background:white;
     color:var(--dark);
-    border:1px solid #ddd;
-}
-
-.hero-img{
-    width:100%;
-    max-width:500px;
-    display:block;
-    margin:auto;
-    border-radius:24px;
-}
-
-.main-logo{
-    width:min(650px,100%);
-    display:block;
-    margin:0 auto 2rem auto;
-}
-
-.tagline{
-    text-align:center;
-    font-size:1.3rem;
-    font-weight:600;
-    color:var(--dark);
-}
-
-.intro{
-    text-align:center;
-    max-width:700px;
-    margin:auto;
-}
-
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-    margin-top:2rem;
-}
-
-.button{
-    text-decoration:none;
-    color:white;
-    padding:1rem 1.5rem;
-    border-radius:999px;
-    background:var(--gradient);
-    font-weight:700;
-}
-
-.secondary{
-    background:var(--dark);
+    border:1px solid #d1d5db;
 }
 
 .section{
@@ -200,15 +164,15 @@ h1{
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:1.5rem;
 }
 
 .card{
     background:white;
     padding:2rem;
-    border-radius:25px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-radius:24px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
 }
 
 .card h3{
@@ -217,227 +181,61 @@ h1{
 }
 
 .about,
-.contact-box{
+.contact{
     background:white;
-    border-radius:25px;
     padding:3rem;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-radius:24px;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
 }
 
 footer{
     text-align:center;
-    padding:3rem 0;
-    color:#6B7280;
+    padding:3rem 1rem;
+    color:#6b7280;
 }
 
-@media(max-width:900px){
+@media (max-width: 900px){
 
     .hero-grid{
         grid-template-columns:1fr;
         text-align:center;
     }
 
-    .btns,
-    .hero-buttons{
+    .btns{
         justify-content:center;
     }
 
     nav ul{
         gap:1rem;
     }
-
 }
 
 </style>
 </head>
+
 <body>
 
-<header>
-
-<div class="container">
-
-<img
-src="Tmi-Miriam-Karvinen-logo.png"
-alt="TMI Miriam Karvinen"
-class="main-logo">
-
-<p class="tagline">
-Markkinointia, visuaalista suunnittelua ja ICT-palveluja yrityksille
-</p>
-
-<p class="intro">
-Yli 10 vuoden kokemus markkinoinnista ja B2B-myynnistä yhdistettynä nykyaikaiseen ICT-osaamiseen.
-</p>
-
-<div class="hero-buttons">
-<a href="#palvelut" class="button">Palvelut</a>
-<a href="#yhteys" class="button secondary">Ota yhteyttä</a>
-</div>
-
-</div>
-
-</header>
-
 <nav>
-<div class="container nav-inner">
+    <div class="container nav-inner">
 
-<div class="logo">
-Miriam Karvinen
-</div>
+        <div class="logo">
+            Miriam Karvinen
+        </div>
 
-<ul>
-<li><a href="#palvelut">Palvelut</a></li>
-<li><a href="#minusta">Minusta</a></li>
-<li><a href="#yhteys">Yhteys</a></li>
-</ul>
+        <ul>
+            <li><a href="#palvelut">Palvelut</a></li>
+            <li><a href="#minusta">Minusta</a></li>
+            <li><a href="#yhteys">Yhteys</a></li>
+        </ul>
 
-</div>
+    </div>
 </nav>
 
 <section class="hero">
 
-<div class="container hero-grid">
+    <div class="container hero-grid">
 
-<div>
+        <div>
 
-<h1>
-Markkinointia ja
-<span class="gradient">digitaalisia ratkaisuja</span>
-yrityksille
-</h1>
-
-<p>
-Autan yrityksiä näkyvyydessä, markkinoinnissa, asiakashankinnassa, visuaalisessa suunnittelussa sekä ICT-palveluissa.
-</p>
-
-<div class="btns">
-
-<a href="#yhteys" class="btn btn-primary">
-Ota yhteyttä
-</a>
-
-<a href="#palvelut" class="btn btn-secondary">
-Tutustu palveluihin
-</a>
-
-</div>
-
-</div>
-
-<div>
-
-<img
-src="Tmi Miriam Karvinen.png"
-alt="Yrityksen logo"
-class="hero-img">
-
-</div>
-
-</div>
-
-</section>
-
-<section id="palvelut" class="section">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Palvelut</h2>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<h3>📢 Markkinointi</h3>
-<p>Markkinointi, kampanjat, asiakashankinta ja B2B-markkinointi.</p>
-</div>
-
-<div class="card">
-<h3>🎨 Visuaalinen suunnittelu</h3>
-<p>Mainosmateriaalit, yritysilmeet ja digitaalinen sisältö.</p>
-</div>
-
-<div class="card">
-<h3>💻 ICT-palvelut</h3>
-<p>Verkkosivut, käyttöönotot ja tekninen tuki.</p>
-</div>
-
-<div class="card">
-<h3>📊 Data-analytiikka</h3>
-<p>Excel, SQL, raportointi ja asiakasdatan hyödyntäminen.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="minusta" class="section">
-
-<div class="container">
-
-<div class="about">
-
-<div class="section-title">
-<h2>Minusta</h2>
-</div>
-
-<p>
-Olen Miriam Karvinen, markkinoinnin ammattilainen ja IT-tradenomiopiskelija.
-</p>
-
-<br>
-
-<p>
-Minulla on yli kymmenen vuoden kokemus markkinoinnista sekä kokemusta B2B-myynnin johtamisesta. Yhdistän työssäni markkinoinnin, visuaalisen suunnittelun ja teknologian.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="yhteys" class="section">
-
-<div class="container">
-
-<div class="contact-box">
-
-<div class="section-title">
-<h2>Ota yhteyttä</h2>
-</div>
-
-<p>
-Kerro miten voin auttaa yritystäsi.
-</p>
-
-<br>
-
-<div class="btns">
-
-<a href="mailto:tmi.miriam.karvinen@gmail.com" class="btn btn-primary">
-Gmail
-</a>
-
-<a href="mailto:tmi.miriam.karvinen@proton.me" class="btn btn-secondary">
-Proton Mail
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-<div class="container">
-TMI Miriam Karvinen • Y-tunnus 3428079-2
-</div>
-</footer>
-
-</body>
-</html>
+            <h1>
+                Markkinointia
